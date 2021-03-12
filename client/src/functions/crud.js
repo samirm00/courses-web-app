@@ -3,7 +3,7 @@
 export const crud = {
   getAllCourses: async () => {
     try {
-      const res = await fetch("http://localhost:8080/api/courses");
+      const res = await fetch("/api/courses");
       const data = await res.json();
       console.log(data.courses);
       return data.courses;
@@ -14,7 +14,7 @@ export const crud = {
 
   getCourse: async (id) => {
     try {
-      const res = await fetch(`http://localhost:8080/api/courses/${id}`);
+      const res = await fetch(`/api/courses/${id}`);
       const data = await res.json();
       console.log(data);
       return data;
@@ -25,7 +25,7 @@ export const crud = {
 
   postCourse: async (course) => {
     try {
-      const res = await fetch("http://localhost:8080/api/courses", {
+      const res = await fetch("/api/courses", {
         method: "POST",
         body: JSON.stringify(course),
         headers: {
@@ -42,7 +42,7 @@ export const crud = {
 
   updateCourse: async (id, change) => {
     try {
-      const res = await fetch(`http://localhost:8080/api/courses/${id}`, {
+      const res = await fetch(`/api/courses/${id}`, {
         method: "PUT",
         body: JSON.stringify(change),
         headers: { "content-type": "application/json; charset = UTF-8" },
@@ -56,7 +56,7 @@ export const crud = {
 
   deleteCourse: async (id) => {
     try {
-      const res = await fetch(`http://localhost:8080/api/courses/${id}`, {
+      const res = await fetch(`/api/courses/${id}`, {
         method: "DELETE",
       });
       const data = await res.json();

@@ -19,7 +19,7 @@
 
 ## Screenshots
 
-![Example screenshot](planning/img/screenShot.png)
+![Example screenshot](planning/screenShot.png)
 
 ## Technologies
 
@@ -35,7 +35,7 @@
 
 - `npm install`
 
-- `nodemon index.js`
+- `npm run dev`
 
 - use `Postman` to `GET`, `POST` , `PUT` and `DELETE` course(s)
 
