@@ -64,7 +64,7 @@ export const display = {
     const divContainer = document.createElement("div");
     divContainer.classList.add("div-courses");
 
-    // create unordered list for todos
+    // create unordered list for courses
 
     const ulLi = document.createElement("ul");
     ulLi.classList.add("ul-ul");
