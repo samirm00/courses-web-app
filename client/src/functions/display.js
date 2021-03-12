@@ -42,8 +42,7 @@ export const display = {
 
     deleteButton.addEventListener("click", async () => {
       try {
-        const data = await crud.deleteCourse(deleteButton.id);
-       // const data = await res.json();
+        const data = await crud.deleteCourse(deleteButton.id);       
         return data;
       } catch (err) {
         console.log(err);
