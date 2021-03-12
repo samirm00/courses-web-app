@@ -2,8 +2,6 @@
 import { crud } from "../functions/crud.js";
 import { display } from "../functions/display.js";
 
-//handlers
-
 export const handleGetAllCourses = async () => {
   const allCourses = await crud.getAllCourses();
   const render = await display.renderAllCourses(allCourses);
