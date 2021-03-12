@@ -1,3 +1,5 @@
+"use strict";
+
 export const crud = {
   getAllCourses: async () => {
     try {

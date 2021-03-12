@@ -1,4 +1,7 @@
-export const render = {
+"use strict";
+import { crud } from "./crud.js";
+
+export const display = {
   renderCourse: async (course) => {
     // create a parent div
 
@@ -24,7 +27,7 @@ export const render = {
           name: newName,
         };
 
-        const data = await updateCourse(id, course);
+        const data = await crud.updateCourse(id, course);
       } catch (err) {
         console.error(err);
       }
@@ -39,7 +42,7 @@ export const render = {
 
     deleteButton.addEventListener("click", async () => {
       try {
-        const res = await deleteCourse(deleteButton.id);
+        const res = await crud.deleteCourse(deleteButton.id);
         const data = await res.json();
         return data;
       } catch (err) {
@@ -55,28 +58,28 @@ export const render = {
     return divEl;
   },
 
-  renderAllCourses = async (courses) => {
+  renderAllCourses: async (courses) => {
     // divContainer
-  
+
     const divContainer = document.createElement("div");
     divContainer.classList.add("div-courses");
-  
+
     // create unordered list for todos
-  
+
     const ulLi = document.createElement("ul");
     ulLi.classList.add("ul-ul");
     courses.map((course) => {
       const liEl = document.createElement("li");
       liEl.id = course.id;
       liEl.innerText = `${course.id} - ${course.name}`;
-  
+
       ulLi.appendChild(liEl);
     });
-  
+
     // append ulLi to the divContainer
-  
+
     divContainer.appendChild(ulLi);
-  
+
     return divContainer;
-  }
+  },
 };
