@@ -1,0 +1,40 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "gamma-ray"
+    },
+    {
+      "id": 2,
+      "name": "Ultraviolet ray"
+    },
+    {
+      "id": 3,
+      "name": "Visible ray"
+    },
+    {
+      "id": 4,
+      "name": "infrared  ray"
+    },
+    {
+      "id": 5,
+      "name": "microwave ray "
+    },
+    {
+      "id": 6,
+      "name": "Hey you "
+    },
+    {
+      "id": 7,
+      "name": "Hello  new course"
+    },
+    {
+      "id": 8,
+      "name": "super alpha ray"
+    },
+    {
+      "id": 9,
+      "name": "writing test"
+    }
+  ]
+}
