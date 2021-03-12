@@ -1,6 +1,6 @@
 # Courses APP
 
-> A simple full-stack App allow the user to get, add, delete,update a course and get all the courses and refresh them
+> A simple full-stack App allow the user to get, add, delete and update a course, also it allows to get all the courses and refresh them
 
 ## Table of contents
 
@@ -15,7 +15,7 @@
 
 ## General info
 
-> A simple full-stack app , the objective is learn top connect the Back-end with the Front-end.
+> A simple full-stack app , the objective is to learn to connect the Back-end with the Front-end.
 
 ## Screenshots
 
@@ -37,7 +37,6 @@
 
 - `npm run dev`
 
-- use `Postman` to `GET`, `POST` , `PUT` and `DELETE` course(s)
 
 ## Code Examples
 
